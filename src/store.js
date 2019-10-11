@@ -4,6 +4,7 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
+  //creating a state with an array of tasks  that are objects
   state: {
     tasks: [
       {
@@ -32,6 +33,7 @@ export default new Vuex.Store({
   mutations: {
     //task as in task in tasks
     //id.state.task.length is length of tasks array
+    //Mutations newtask is committed in taskform.vue
     newtask(state, task) {
       state.tasks.push({
         id: state.tasks.length,
