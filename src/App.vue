@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <NavBar/>
+    <TaskForm/>
+    <TaskList tasks/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from "./components/Navbar.vue";
+import TaskForm from "./components/TaskForm.vue";
+import TaskList from "./components/TaskList.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    NavBar,
+    TaskForm,
+    TaskList
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  font-family: Baloo Bhai, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+  background-color: burlywood;
 }
 </style>
